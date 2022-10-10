@@ -1,9 +1,20 @@
 # anomalies_detection
 Pre-processing and Auto-encoders to detect anomalies in the BRIL detectors
 
+In order to run the scripts:
+1. add to the .bashrc the following: /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
+2. add to the current user on lxplus the folder my_env a
+3. choose my_env as kernel
 
+In order to generate the dataframe for the BCM1F data:
+1. add read_data.py  
+2. use the FILLDATABCM1F script to generate the dataframe by using the function get_raw_data
 
-In order to run the scripts, in VS code for example, from LXPLUS it is necessary to use the virtual environment that can be here found under the name my_env and to add to the .bashrc the following: /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh.
+In order to plot the BCM1F dataframe: 
+1. add read_data.py
+2. use plots_bcm1f.ipynb to plot the fills; use the function get_raw_data and generate_plots
 
+In order to perform PCA use scripts PCA both for LumiData and BCM1F data.
+In order to train the autoencoder, use the autoencoder scripts (the model is really sensible to the split between the train and test dataset).
 
-To generate the dataframe for the BCM1F data, use FILLDATABCM1F.ipynb and read_data.py  
+There is also a script for training a LSTM (RNN).
