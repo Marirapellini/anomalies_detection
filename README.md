@@ -3,7 +3,7 @@ Pre-processing and Auto-encoders to detect anomalies in the BRIL detectors
 
 In order to run the scripts:
 1. add to the .bashrc the following: /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
-2. add to the current user on lxplus the folder my_env a
+2. set up a virtual environment on VSCode (add to the current user on lxplus the folder my_env) 
 3. choose my_env as kernel
 
 In order to generate the dataframe for the BCM1F data:
@@ -18,3 +18,5 @@ In order to perform PCA use scripts PCA both for LumiData and BCM1F data.
 In order to train the autoencoder, use the autoencoder scripts (the model is really sensible to the split between the train and test dataset).
 
 There is also a script for training a LSTM (RNN).
+
+The split between training and testing dataset is done by analyzing visually each fill and by deciding which fills are good for training and which one have anomalies that have to be detected (these would belong to the test dataset); at least 51% of the total number of fills should belong to the train dataset. 
