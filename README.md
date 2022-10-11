@@ -3,7 +3,7 @@ Pre-processing and Auto-encoders to detect anomalies in the BRIL detectors
 
 In order to run the scripts:
 1. add to the .bashrc the following: /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
-2. set up a virtual environment on VSCode (add to the current user on lxplus the folder my_env) 
+2. set up a virtual environment on VSCode (add to the current user on lxplus the folder my_env) (https://anbasile.github.io/posts/2017-06-25-jupyter-venv/)
 3. choose my_env as kernel
 
 In order to generate the dataframe for the BCM1F data:
