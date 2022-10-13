@@ -9,6 +9,7 @@ b) run source projectname/bin/activate to activate it
 c) from inside the environment install ipykernel using pip: pip install ipykernel
 d) run ipython kernel install --user --name=projectname to install a new kernel
 4. choose my_env as kernel
+5. add to my_env the script pyvenv.cfg (https://github.com/Marirapellini/anomalies_detection/blob/master/my_env/pyvenv.cfg)
 
 In order to generate the dataframe for the BCM1F data:
 1. add read_data.py  
