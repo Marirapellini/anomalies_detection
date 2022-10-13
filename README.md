@@ -3,8 +3,12 @@ Pre-processing and Auto-encoders to detect anomalies in the BRIL detectors
 
 In order to run the scripts:
 1. after having accessed to the lxplus, add to the .bashrc the following: /cvmfs/sft.cern.ch/lcg/views/LCG_101/x86_64-centos7-gcc11-opt/setup.sh
-2. set up a virtual environment on VSCode (add to the current user on lxplus the folder my_env)(https://janakiev.com/blog/jupyter-virtual-envs/#add-virtual-environment-to-jupyter-notebook)
-3. choose my_env as kernel
+2. set up a virtual environment on VSCode (add to the current user on lxplus the folder my_env. To do so:
+a)in the folder, create a new virtual environment: python -m venv projectname
+b) run source projectname/bin/activate to activate it
+c) from inside the environment install ipykernel using pip: pip install ipykernel
+d) run ipython kernel install --user --name=projectname to install a new kernel
+4. choose my_env as kernel
 
 In order to generate the dataframe for the BCM1F data:
 1. add read_data.py  
